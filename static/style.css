@@ -1,0 +1,190 @@
+@charset "UTF-8";
+html {
+    font-size:20px;
+}
+
+*	 {
+	color: #000000;
+	margin: 0px;
+	text-align: center;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight:400;
+	font-family: "Noto Sans TC","Source Sans Pro","Microsoft JhengHei","微軟正黑體","PingFang","STHeiti", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+	margin-top: 10%;
+	background: url("images/background.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size : cover;
+	-webkit-background-size: cover;
+ 	-o-background-size: cover;
+	background-color: #EFEFEF;
+	background-origin: padding-box;
+	font-size: 1.2rem;
+    color:#444444;
+}
+
+#page { 
+	margin-top: 10%;
+	min-height: 5%;
+	min-width: 5%;
+}
+
+
+h1 {
+	padding-bottom: 5%;
+	font-size: 3rem;
+}
+	@media (max-width: 750px) {
+	  h1{font-size: 2rem;
+	  }
+	}
+	@media (orientation: portrait), (max-width:500){
+		  h1{font-size:1.5rem;
+		}
+	}
+
+h3 {
+	padding-bottom: 2%;
+	font-size: 1.4rem;
+}
+	@media (max-width: 750px) {
+	  h3{font-size: 1.2rem;
+	  }
+	}
+	@media (orientation: portrait), (max-width: 500){
+		  h3{font-size: 1rem;
+		}
+	}
+
+h4 {
+	margin: 2%;
+	font-size: 1.4rem;
+}
+	@media (max-width: 750px) {
+	  h4{font-size: 1.2rem;
+	  }
+	}
+	@media (orientation: portrait), (max-width: 500){
+		  h4{font-size: 1rem;
+		}
+	}
+
+label {
+	background-color: #f7f57f;
+}	
+	
+button {
+	margin: 0.5%;
+}
+
+.county {
+	margin: 0.5%;	
+}
+.district {
+	margin: 0.5%;
+}
+.zipcode {
+	margin: 0.5%;
+}
+
+#display {
+	font-size: 1.6rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 0.5%;
+	width: 10vw;
+}
+	@media (max-width: 750px) {
+	  #display{font-size: 1.3rem;
+	  	}
+	}
+	@media (orientation: portrait), (max-width: 500){
+		  #display{font-size: 1rem;
+		}
+	}
+	.hidden {
+		visibility: hidden;
+		overflow: hidden;
+		width: 0px;
+		height: 0px;
+	}
+	
+#l {
+	background-color: rgba(255, 255, 255, 0.5);
+
+}   
+	@media (max-width: 750px) {
+		#l{font-size: 1.3rem;
+		}
+  	}
+  	@media (orientation: portrait), (max-width: 500){
+		#l{font-size: 1rem;
+	  	}
+  	}
+  	.hidden {
+	  visibility: hidden;
+	  overflow: hidden;
+	  width: 0px;
+	  height: 0px;
+  }
+
+#riskbox {
+	margin: 3%;
+	padding: 0.5%;
+	height:30vw;
+	width:30vw;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+	@media (max-width: 750px) {
+	  #display{font-size: 1.3rem;
+	  }
+	}
+	@media (orientation: portrait), (max-width: 500){
+		  #display{font-size: 1rem;
+		}
+	}
+	.hidden {
+		visibility: hidden;
+		overflow: hidden;
+		width: 0px;
+		height: 0px;
+	}
+
+#risk_icon {
+	margin: 3%;
+	height:50%;
+	width:50%;
+	border-radius: 50%;
+	display:inline-block;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+.text_centered {
+  line-height: 50%;
+  font-size: 2.3rem;
+  
+}
+
+.red {
+	background-color: #ff5d55;
+	color: #E6544D;
+}
+
+.yellow {
+	background-color: #ffb253;
+	color: #E9A34E;
+}
+
+.green {
+	background-color: #d7eb5a;
+	color: #C4D651;
+}
+
+.non {
+	background-color: #b1b0b0;
+	color: #b1b0b0;
+}

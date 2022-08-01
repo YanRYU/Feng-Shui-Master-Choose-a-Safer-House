@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% load static %}
+    <meta charset=" UTF-8" />
+    <title>安心選宅風水師</title>
+    <!--import jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!--import 縣市下拉式選單-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.15-rc1/jquery.twzipcode.min.js"></script> -->
+    <!-- <script src="https://raw.githubusercontent.com/Char11e/jQuery-TWzipcode/master/jquery.twzipcode.min.js"></script> -->
+    <script src="{% static '/twzipcode.js' %}"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.4/proj4.js"></script> -->
+    <script src="{% static '/proj4js.js' %}"></script>
+    <!--import 字型及twzip樣式-->
+    
+	<link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+
+</head>
+
+<body>
+
+    <div  id="page"></div>
+	<h1>安心選宅風水師</h1>
+    </br>
+		
+
+    <div  id="page" >
+	<em>{{ row }}</em>
+	
+	<!--顯示回傳的數字-->
+		<p><span id="risk" name="risk"></span></p>
+	
+        <div  id="riskbox" style="width:auto; height:auto; float:left; display:inline">
+            <h4>水災風險</h4>
+                <span id="risk_icon" class="red"><h1>高</h1></span>
+                <span id="desc"><p>水災風險說明文字</p></span>
+    </div>
+        <div  id="riskbox" style="width:auto; height:auto; float:left; display:inline">
+            <h4>火災風險</h4>
+                <span id="risk_icon" class="yellow"><h1>中</h1></span>
+                <span id="desc"><p>火災風險說明文字</p></span>
+    </div>
+         <div  id="riskbox" style="width:auto; height:auto; float:left; display:inline">
+            <h4>震災風險</h4>
+                <span id="risk_icon" class="green"><h1>低</h1></span>
+                <span id="desc"><p>震災風險說明文字</p></span>
+    </div>
+        <div  id="riskbox" style="width:auto; height:auto; float:left; display:inline">
+            <h4>坡災風險</h4>
+                <span id="risk_icon" class="non"><h1>無</h1></span>
+                <span id="desc"><p>坡災風險說明文字</p></span>
+    </div>
+         <div  id="riskbox" style="width:auto; height:auto; float:left; display:inline">
+            <h4>治安風險</h4>
+                <span id="risk_icon" class="non"><h1>無</h1></span>
+                <span id="desc"><p>治安風險說明文字</p></span>
+     </div>    
+
+   
+
+</body>
+
+</html>
